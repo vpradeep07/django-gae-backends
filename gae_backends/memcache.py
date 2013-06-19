@@ -31,7 +31,7 @@ class MemcacheCache(BaseCache):
         return timeout
 
     def add(self, key, value, timeout=None, version=None):
-        return memcache.add(key, value, time=timeout, version=version)
+        return memcache.add(key, value, time=timeout)
 
     def get(self, key, default=None, version=None):
         key = self.make_key(key, version=version)
