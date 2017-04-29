@@ -3,7 +3,6 @@
 """
 
 from django.core.cache.backends.base import BaseCache
-from django.utils.hashcompat import md5_constructor
 import time
 
 from google.appengine.api import memcache
